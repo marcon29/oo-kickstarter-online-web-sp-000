@@ -1,21 +1,21 @@
 class Project
   attr_accessor :title, :backers
 
-  @@all = []
+  #@@all = []
 
   def initialize(title)
     @title = title
     @backers = []
-    save
+  #  save
   end
 
-  def save
-    @@all << self
-  end
+  #def save
+  #  @@all << self
+  #end
 
-  def self.all
-    @@all
-  end
+  #def self.all
+  #  @@all
+  #end
 
   def add_backer(backer)
     @backers << backer
